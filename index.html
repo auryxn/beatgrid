@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BeatGrid</title>
+</head>
+<body>
+  <div class="w">
+    <h1>BEAT<span>GRID</span></h1>
+
+    <div class="bar">
+      <button id="pl">▶ Играть</button>
+      <label>BPM <input type="range" id="bp" min="60" max="180" value="110"><b id="bv">110</b></label>
+      <label>Свинг <input type="range" id="sw" min="0" max="60" value="0"></label>
+    </div>
+
+    <div class="bar">
+      <select id="ps">
+        <option value="">Пресет…</option>
+        <option value="house">House</option>
+        <option value="hiphop">Hip-hop</option>
+        <option value="break">Breakbeat</option>
+        <option value="trap">Trap</option>
+      </select>
+      <button id="rnd">🎲 Случайно</button>
+      <button id="clr">Очистить</button>
+      <button id="shr">🔗 Ссылка</button>
+    </div>
+
+    <div class="g" id="g"></div>
+
+    <p class="hint">Пробел — старт/стоп. Нажмите на название дорожки, чтобы заглушить её. Паттерн и темп сохраняются в браузере и в ссылке.</p>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
